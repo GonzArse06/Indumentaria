@@ -1,0 +1,6 @@
+C:\Users\gcarranza\Documents\GitHub\Indumentaria\Indumentaria\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\gcarranza\Documents\GitHub\Indumentaria\Indumentaria\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\gcarranza\Documents\GitHub\Indumentaria\Indumentaria\ClassLibrary\obj\Debug\ClassLibrary.csprojAssemblyReference.cache
+C:\Users\gcarranza\Documents\GitHub\Indumentaria\Indumentaria\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\gcarranza\Documents\GitHub\Indumentaria\Indumentaria\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\gcarranza\Documents\GitHub\Indumentaria\Indumentaria\ClassLibrary\obj\Debug\ClassLibrary.pdb
