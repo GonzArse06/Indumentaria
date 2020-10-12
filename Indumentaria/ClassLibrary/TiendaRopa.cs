@@ -98,7 +98,7 @@ namespace ClassLibrary
             foreach (Indumentaria aux in _invetario)
             {
                 if (aux.Equals(a))
-                    modificacion = a;
+                    modificacion = aux;
             }
             if (modificacion == null)
                 throw new CodigoInexistenteException("El codigo no existe.");
@@ -112,13 +112,16 @@ namespace ClassLibrary
         }
         public void Quitar(Indumentaria a)
         {
+            this._invetario.Remove(a);
+            /*
             Indumentaria eliminar = this._invetario.SingleOrDefault(x => x.Codigo == a.Codigo);
             if(eliminar == null)
                 throw new CodigoInexistenteException("El codigo no existe.");
             else
             {
                 this._invetario.Remove(eliminar);
-            }
+                
+            }*/
         }
         public void Ingresar(Indumentaria a)
         {
