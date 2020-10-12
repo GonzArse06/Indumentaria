@@ -8,5 +8,7 @@ namespace ClassLibrary.Entidades
 {
     class IndumentariaCasual : TipoIndumentaria
     {
+        public IndumentariaCasual(string origen, double porcentaje) : base(origen, porcentaje)
+        { }
     }
 }

@@ -11,5 +11,11 @@ namespace ClassLibrary.Entidades
         public string Origen;
         public double PorcentajeAlgodon;
 
+        public TipoIndumentaria(string origen, double porcentaje)
+        {
+            this.Origen = origen;
+            this.PorcentajeAlgodon = porcentaje;
+        }
+
     }
 }

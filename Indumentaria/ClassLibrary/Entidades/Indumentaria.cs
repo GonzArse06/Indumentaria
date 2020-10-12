@@ -14,6 +14,15 @@ namespace ClassLibrary.Entidades
         public string Talle { get; set; }
         public double Precio { get; set; }
 
+        public Indumentaria(TipoIndumentaria tipo, int codigo, string talle, double precio)
+        {
+            this.Tipo = tipo;
+            this.Codigo = codigo;
+            this.Stock = 3;
+            this.Talle = talle;
+            this.Precio = precio;
+        }
+
         public override string ToString()
         {
             return GetDetalle();

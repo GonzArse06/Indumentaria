@@ -12,10 +12,15 @@ namespace ClassLibrary
         public Indumentaria Prenda { get; set; }
         public int Cantidad { get; set; }
 
+        public VentaItem(Indumentaria prenda, int cantidad)
+        {
+            this.Prenda = prenda;
+            this.Cantidad = cantidad;
+        }
+
         public double GetTotal()
         {
-            double retorno=0;
-            return retorno;
+            return Cantidad * Prenda.Precio;
         }
     }
 }

@@ -11,5 +11,15 @@ namespace ClassLibrary
         public int Codigo { get; set; }
         public string Apellido { get; set; }
         public string Nombre { get; set; }
+        public Cliente(int codigo, string nombre, string apellido)
+        {
+            this.Codigo = codigo;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+        }
+        public override string ToString()
+        {
+            return "Codigo Cliente: "+Codigo + " - Nombre: " + Apellido + ", " + Nombre;
+        }
     }
 }

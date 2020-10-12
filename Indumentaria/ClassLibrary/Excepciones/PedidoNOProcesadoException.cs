@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class SinStockException:Exception
+    public class PedidoNOProcesadoException: Exception
     {
-        public SinStockException(string mensaje) : base(mensaje)
+        public PedidoNOProcesadoException(string mensaje) : base(mensaje)
         { }
     }
 }

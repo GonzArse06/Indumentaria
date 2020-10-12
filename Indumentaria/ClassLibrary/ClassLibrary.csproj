@@ -50,6 +50,9 @@
     <Compile Include="Entidades\IndumentariaCasual.cs" />
     <Compile Include="Entidades\TipoIndumentaria.cs" />
     <Compile Include="EstadoVenta.cs" />
+    <Compile Include="Excepciones\CodigoInexistenteException.cs" />
+    <Compile Include="Excepciones\PedidoNOProcesadoException.cs" />
+    <Compile Include="FactoryTipoIndumentaria.cs" />
     <Compile Include="TiendaRopa.cs" />
     <Compile Include="Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

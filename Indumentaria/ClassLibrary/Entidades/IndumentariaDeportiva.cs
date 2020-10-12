@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 namespace ClassLibrary.Entidades
 {
     class IndumentariaDeportiva: TipoIndumentaria
-    { 
-
+    {
+        public IndumentariaDeportiva(string origen, double porcentaje) : base(origen, porcentaje)
+        { }
 
     }
 }
