@@ -58,12 +58,12 @@ namespace ConsoleApp
                 }
                 if (opcion != 8)
                 {
-                    Console.WriteLine("\n\nEnter para continuar.....");
+                    Console.WriteLine("\n\nEnter para continuar.....\n");
                     Console.ReadKey();
                 }
                 else
                 {
-                    Console.WriteLine("\n\n************** Gracias por usar el programa **************");
+                    Console.WriteLine("\n************** Gracias por usar el programa **************\n");
                     Thread.Sleep(5000);
                 }
             } while (opcion != 8);
@@ -86,14 +86,14 @@ namespace ConsoleApp
         }
         static void AgregarIndumentaria(TiendaRopa tiendaRopa)
         {
-            Console.WriteLine("\n\n******************** AGREGAR INDUMENTARIA ********************");
+            Console.WriteLine("\n******************** AGREGAR INDUMENTARIA ********************\n");
 
             string texto;
             int booleanoNumero;
             bool booleano;
 
             int tipoIndumentaria = Validaciones.Entero("tipo de indumentaria (1-Casual | 2-Deportiva | 3-Formal)", 1, 3);
-            int claseIndumentaria = Validaciones.Entero("1-Camisa | 2-Pantalon",1,2);
+            int claseIndumentaria = Validaciones.Entero("1-Camisa | 2-Pantalon)",1,2);
             string talle = Validaciones.Texto("talle").ToUpper();
             double precio = Validaciones.Importe("precio", 1, 999999);
             if (claseIndumentaria == 1)
@@ -127,7 +127,7 @@ namespace ConsoleApp
         }
         static void ModificarIndumentaria(TiendaRopa tiendaRopa)
         {
-            Console.WriteLine("\n\n******************** MODIFICAR INDUMENTARIA ********************");
+            Console.WriteLine("\n******************** MODIFICAR INDUMENTARIA ********************\n");
 
             List<Indumentaria> aux = tiendaRopa.Lista();
             Indumentaria auxiliar=null;
@@ -213,7 +213,7 @@ namespace ConsoleApp
         }
         static void EliminarIndumentaria(TiendaRopa tiendaRopa)
         {
-            Console.WriteLine("\n\n******************** ELIMINAR INDUMENTARIA ********************");
+            Console.WriteLine("\n******************** ELIMINAR INDUMENTARIA ********************\n");
             List<Indumentaria> aux = tiendaRopa.Lista();
             Indumentaria auxiliar = null;
 
@@ -255,7 +255,7 @@ namespace ConsoleApp
         }
         static void ListarOrdenes(TiendaRopa tiendaRopa)
         {
-            Console.WriteLine("\n\n******************** LISTADO DE ORDENES ********************");
+            Console.WriteLine("\n******************** LISTADO DE ORDENES ********************\n");
             List<Venta> venta = tiendaRopa.ListarOrden();
             if (venta.Count == 0)
                 Console.WriteLine("No hay pedidos ingresados");
@@ -268,7 +268,7 @@ namespace ConsoleApp
         }
         static void DevolverOrden(TiendaRopa tiendaRopa)
         {
-            Console.WriteLine("\n\n******************** DEVOLUCION DE ORDEN ********************");
+            Console.WriteLine("\n******************** DEVOLUCION DE ORDEN ********************\n");
             List<Venta> venta = tiendaRopa.ListarOrden();
             if (venta.Count == 0)
                 Console.WriteLine("No hay pedidos ingresados");
@@ -304,7 +304,7 @@ namespace ConsoleApp
         static void IngresarOrden(TiendaRopa tiendaRopa)
         {
             int numeroPedido;
-            Console.WriteLine("\n\n******************** INGRESAR ORDEN ********************");
+            Console.WriteLine("\n******************** INGRESAR ORDEN ********************\n");
             List<Cliente> clientes = tiendaRopa.ListarClientes();
             foreach (Cliente a in clientes)
                 Console.WriteLine(a.ToString());
